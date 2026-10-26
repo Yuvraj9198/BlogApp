@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "731054689949",
+    "firebase_url": "https://blogapp-edac6-default-rtdb.firebaseio.com",
+    "project_id": "blogapp-edac6",
+    "storage_bucket": "blogapp-edac6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731054689949:android:9c615cf2cc49cf443b0e74",
+        "android_client_info": {
+          "package_name": "com.example.blogapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2HTItluNtMP1xZmkuB1iK23tUOS6SmUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

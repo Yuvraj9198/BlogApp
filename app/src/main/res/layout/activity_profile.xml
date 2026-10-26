@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E4E4E"
+    tools:context=".ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Userprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView5"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="234dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/date_color"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/divider4"
+        app:layout_constraintEnd_toEndOf="@id/divider4"
+        app:layout_constraintStart_toStartOf="@id/divider4"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/userlist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:textSize="32sp"
+            android:background="@drawable/text_white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/connects"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_white"
+            android:gravity="center"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addNewBlogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/add"
+        android:drawablePadding="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Add new Article"
+        android:textColor="@color/white"
+        app:srcCompat="@drawable/add"
+        app:layout_constraintTop_toBottomOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yourArticleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/article"
+        android:drawablePadding="28dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Your Articles"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/addNewBlogButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addNewBlogButton"
+        app:layout_constraintTop_toBottomOf="@+id/addNewBlogButton"
+        app:srcCompat="@drawable/add" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutbuttton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/logout"
+        android:drawablePadding="28dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/yourArticleButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yourArticleButton"
+        app:layout_constraintTop_toBottomOf="@+id/yourArticleButton"
+        app:srcCompat="@drawable/add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
